@@ -1,4 +1,4 @@
-# Graph Algorigh
+# Graph Algorithms
 
 Graph algorithms in adapted from FreeCodeCamp in Python.
 
