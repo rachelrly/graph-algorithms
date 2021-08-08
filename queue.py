@@ -1,27 +1,27 @@
 from node import Node
 
 class Queue:
-    def __init__(self, first, last):
-        self.first = None
-        self.last = None
+    def __init__(self, first_node, last_node):
+        self.first_node = None
+        self.last_node = None
 
     def enqueue(self, value):
         node = Node(value)
 
-        if self.first == None:
-          self.first = node
+        if self.first_node == None:
+          self.first_node = node
 
-        if self.last !== None:
-          self.last.next = node
+        if self.last_node != None:
+          self.last_node.next = node
 
-        self.last = node
+        self.last_node = node
 
     def dequeue(self):
-      if self.first == None: return
-      node = self.first
-      self.first = self.first.next
+      if self.first_node == None: return
+      node = self.first_node
+      self.first_node = self.first_node.next
 
-      if node == self.last:
-        self.last = None
+      if node == self.last_node:
+        self.last_node = None
 
       return node.value
